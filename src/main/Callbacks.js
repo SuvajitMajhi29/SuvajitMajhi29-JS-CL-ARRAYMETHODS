@@ -23,6 +23,7 @@ arrForEach(originalArray);
  * I'll provide this first one to you: return arr.filter(containsSpace);
  */
 function arrFilter(arr){
+    return arr.filter((str) => !containsSpace(str));
 //    code here
 }
 
@@ -31,6 +32,7 @@ function arrFilter(arr){
  * This should return an array of the items of arr, all converted to uppercase characters.
  */
 function arrMap(arr){
+     return arr.map(convertToUppercase);
 //    code here
 }
 
@@ -40,6 +42,7 @@ function arrMap(arr){
  * logged to the console. (this is the equivalent of System.out.println)
  */
 function arrForEach(arr){
+    arr.forEach(consoleLogEachItem);
 //    code here
 }
 
@@ -72,7 +75,7 @@ function convertToUppercase(str){
 
 function consoleLogEachItem(str){
     console.log(str); 
-    let consoleOutput = document.getElementById("consoleOutput");
+    // let consoleOutput = document.getElementById("consoleOutput");
     consoleOutput.innerText += str + "\n"; 
 }
 
